@@ -66,6 +66,8 @@ a.party {
   cursor: pointer;
   margin: 20px;
 
+  text-decoration: none;
+
   transition: box-shadow 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 
   &:hover {
