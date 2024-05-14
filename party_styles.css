@@ -1,0 +1,97 @@
+:root {
+  --a-colour: rgb(201, 0, 44);
+  --b-colour: rgb(236, 0, 140);
+  --c-colour: rgb(0, 88, 66);
+  --f-colour: rgb(196, 22, 28);
+  --i-colour: rgb(0, 47, 69);
+
+  --a-text-colour: rgb(243,243,243);
+  --b-text-colour: rgb(255,255,255);
+  --c-text-colour: rgb(255,255,255);
+  --f-text-colour: rgb(255, 255, 255);
+  --i-text-colour: rgb(0, 47, 69);
+
+  --a-font: brandon-grotesque, proxima-nova, montserrat, avenir, gibson, ff-mark, circular, nunito, sans-serif;
+  --b-font: stratos, arial, helvetica, sans-serif;
+  --c-font: open-sans, arial, helvetica, sans-serif;
+  --f-font: sans-serif;
+  --i-font: sans-serif;
+
+  --a-hover-colour: rgb(240, 77, 70);
+  --b-hover-colour: rgb(0, 57, 116);
+  --c-hover-colour: rgb(158, 209, 150);
+  --f-hover-colour: rgb(85, 204, 128);
+  --i-hover-colour: rgb(232, 174, 62);
+}
+
+a.party{
+
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &#a {
+    background-color: var(--a-colour);
+    color: var(--a-text-colour);
+    font-family: var(--a-font);
+    border-radius: 50%;
+
+    &:hover {
+      background-color: var(--a-hover-colour);
+    }
+  }
+
+  &#b {
+    background-color: var(--b-colour);
+    color: var(--b-text-colour);
+    font-family: var(--b-font);
+    border-radius: 50%;
+
+    &:hover {
+      background-color: var(--b-hover-colour);
+    }
+  }
+
+  &#c {
+    background-color: var(--c-colour);
+    color: var(--c-text-colour);
+    font-family: var(--c-font);
+    border-radius: 25%;
+
+    &:hover {
+      background-color: var(--c-hover-colour);
+    }
+  }
+
+  &#f {
+    background-color: var(--f-colour);
+    color: var(--f-text-colour);
+    font-family: var(--f-font);
+    border-radius: 80% 20% 30% 70% / 60% 15% 85% 40%;
+    font-size: 60px;
+    font-style: italic;
+
+    &:hover {
+      background-color: var(--f-hover-colour);
+    }
+  }
+
+  &#i {
+    outline: 1rem solid var(--i-colour);
+    color: var(--i-text-colour);
+    font-family: var(--i-font);
+    border-radius: 50%;
+    font-size: 50px;
+
+    &:hover {
+      outline: var(--i-hover-colour);
+    }
+  }
+
+}
