@@ -14,6 +14,10 @@ section {
     &#intro {
         font-family: monospace;
     }
+
+    * {
+        max-width: 100%;
+    }
 }
 
 button {
@@ -36,4 +40,8 @@ button {
     &#show-info {
         margin-top: 2rem;
     }
+}
+
+.info-box {
+    margin-bottom: 1rem;
 }
