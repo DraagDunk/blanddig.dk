@@ -5,3 +5,13 @@ showInfoButton.addEventListener("click", () => {
         box.toggleAttribute("hidden");
     })
 })
+
+const showActionsButton = document.getElementById("show-actions");
+showActionsButton.addEventListener("click", () => {
+    const actionsAside = document.querySelector(".actions");
+    if (actionsAside.classList.contains("open")) {
+        actionsAside.classList.remove("open");
+    } else {
+        actionsAside.classList.add("open");
+    }
+})
