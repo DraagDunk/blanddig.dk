@@ -101,3 +101,9 @@ aside.actions {
         display: none;
     }
 }
+
+@media (min-width: 1500px) {
+    section {
+        max-width: 1000px;
+    }
+}
